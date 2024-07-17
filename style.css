@@ -242,3 +242,64 @@ footer{
     background: #131921;
     padding: 20px 60px; 
 }
+
+/*Media Query*/
+
+@media only screen and (max-width: 900px) {
+  nav {
+    flex-wrap: wrap;
+  }
+  .nav-search {
+    order: 7;
+    margin: 15px 0 5px;
+    min-width: 300px;
+  }
+  .box-col {
+    max-width: 48%;
+  }
+  .nav-cart{
+    display: none;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .nav-country {
+    display: none;
+  }
+  .nav-language{
+    display: none;
+  }
+  .nav-text{
+    display: none;
+  }
+  .nav-bottom{
+    font-size: 13px;
+    gap: 10px;
+    overflow-x: scroll;
+  }
+  .nav-bottom::-webkit-scrollbar{
+    display: none;
+  }
+  .nav-bottom p{
+    text-wrap: nowrap;
+  }
+  .nav-cart h4{
+    display: none;
+  }
+  .nav-cart{
+    width: 25px;
+  }
+  .header-slider a{
+    top: 24%;
+    padding: 2vh 1vw;
+    font-size: 15px;
+  }
+  .box-column{
+    max-width: 100%;
+    width: 100%;
+  }
+  footer{
+    justify-content: center;
+    flex-direction: column;
+    font-size: 14px;
+  }
+}
